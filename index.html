@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- NOME COMPLETO -->
+
+    <input type="text" id="nome" placeholder="Digite seu nome completo">
+    <button onclick="exibirNome()">Exibir Nome e Quantidade de Letras</button>
+
+    <!-- LAMPADA -->
+
+    <img id="lamp" src="imagens/lampada-off.jpg">
+
+    <img id="lampada" src="imagens/lampada-off.jpg" onmouseover="trocarImagem()" onmouseout="retornarImagem()">
+    
+    <!-- EXIBIR SAUDACAO -->
+
+    <label for="nome7">Nome:</label>
+    <input type="text" id="nome7"><br><br>
+    
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" id="sobrenome">
+    
+    <button onclick="exibirSaudacao()">Saudação</button>
+
+    <!-- CPF -->
+
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" maxlength="14" oninput="formatarCPF()">
+
+    <span id="cpfFormatado"></span><BR></BR>
+
+    <!-- CPF COM PONTUAÇÃO -->
+
+    <label for="cpfPoint">CPF com pontuação:</label>
+    <input type="text" id="cpfPoint" maxlength="14" oninput="atualizarCPF()">
+
+    <label for="cpfNoPoint">CPF sem pontuação:</label>
+    <input type="text" id="cpfNoPoint" disabled>
+
+    <!-- BOTAO -->
+
+    <button onclick="alterarCor('green')">Verde</button>
+    <button onclick="alterarCor('red')">Vermelho</button>
+
+    <div id="elemento" style="width: 100px; height: 100px; background-color: white;"></div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"].error {
+    border-color: red;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
